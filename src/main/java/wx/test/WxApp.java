@@ -219,4 +219,11 @@ public class WxApp {
         return WxMessage.Text.builder().content("pKS9_xJ6hvk4uLPOsHNPmnVRw0vE").toGroup(Integer.parseInt(tagId)).build();
     }
 
+
+    @RequestMapping("/index")
+    public String index() {
+        return "myindex.html";
+    }
+
+
 }
